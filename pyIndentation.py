@@ -1,0 +1,10 @@
+p=('Python Identation')
+up = p.upper()
+print(up)
+print('Indentation refers to the spaces at the beginning of a code line.\nWhere in other programming languages the indentation in code is for readability only, the indentation in Python is verry important.\nPython uses indentation to indicate a block of code.')
+print('Example'.upper())
+if 5 > 2:
+    print('Five is greater than two!')
+print('Python will give you an error if you skip the indentation: ')
+print('Example'.upper())
+print('Syntax Error:')
