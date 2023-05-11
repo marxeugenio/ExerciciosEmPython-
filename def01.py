@@ -1,3 +1,5 @@
-def hello (meu_nome, idade):
-    print('Olá', meu_nome,'\nSua idade é:',idade)
-hello('fabio',28)
+def soma(a, b):
+    return a + b
+
+resultado = soma(2,3)
+print(resultado)
