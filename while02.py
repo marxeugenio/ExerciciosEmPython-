@@ -1,5 +1,11 @@
-nums = []
-while len(nums) < 4:
-    user_imput = int(input('Insira um número inteiro: '))
-    if user_imput % 2 == 0:
-        nums.append(user_imput)
+import random
+
+target_number = random.randint(1,100)
+guess = 0
+while guess != target_number:
+    guess = int(input("Adibinhe o número: "))
+    if guess < target_number:
+        print("Muito baixo!")
+    elif guess > target_number:
+        print("Muito Alto")
+print("Parabens! Voce acertou")
