@@ -1,0 +1,1 @@
+tupla3 = ("Marx","Python","tuple","Js")
