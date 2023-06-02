@@ -1,0 +1,31 @@
+def contar_palavras(arquivo):
+    # Abrir o arquivo em modo de leitura
+    with open(arquivo, 'r') as f:
+        # Inicializar um dicionário vazio para armazenar as palavras e suas contagens
+        contagem_palavras = {}
+        
+        # Ler cada linha do arquivo
+        for linha in f:
+            # Remover caracteres especiais e dividir a linha em palavras individuais
+            palavras = linha.strip().split()
+            
+            # Contar as palavras e atualizar o dicionário
+            for palavra in palavras:
+                if palavra in contagem_palavras:
+                    contagem_palavras[palavra] += 1
+                else:
+                    contagem_palavras[palavra] = 1
+    
+    # Retornar o dicionário com as contagens de palavras
+    return contagem_palavras
+
+
+# Exemplo de uso
+nome_arquivo = 'texto.txt'  # Substitua pelo nome do arquivo que você deseja ler
+
+# Chamar a função para contar as palavras no arquivo
+contagem = contar_palavras(nome_arquivo)
+
+# Imprimir a contagem de palavras
+for palavra, quantidade in contagem.items():
+    print(f'{palavra}: {quantidade}')
