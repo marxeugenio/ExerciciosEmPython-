@@ -1,0 +1,31 @@
+import statistics
+
+# Função para ler uma lista de números do usuário
+def ler_lista_numeros():
+    numeros = input("Digite uma lista de números separados por espaço: ")
+    numeros = numeros.split()
+    numeros = [float(numero) for numero in numeros]
+    return numeros
+
+# Função para calcular estatísticas
+def calcular_estatisticas(numeros):
+    media = statistics.mean(numeros)
+    mediana = statistics.median(numeros)
+    desvio_padrao = statistics.stdev(numeros)
+    return media, mediana, desvio_padrao
+
+# Função para exibir as estatísticas
+def exibir_estatisticas(media, mediana, desvio_padrao):
+    print("Média: ", media)
+    print("Mediana: ", mediana)
+    print("Desvio Padrão: ", desvio_padrao)
+
+# Função principal
+def main():
+    numeros = ler_lista_numeros()
+    media, mediana, desvio_padrao = calcular_estatisticas(numeros)
+    exibir_estatisticas(media, mediana, desvio_padrao)
+
+# Execução do programa
+if __name__ == '__main__':
+    main()
