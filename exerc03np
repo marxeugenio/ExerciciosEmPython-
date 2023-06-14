@@ -1,0 +1,11 @@
+import numpy as np
+
+array = np.array([1, 2, 3, 4, 5])
+
+mean = np.mean(array)
+median = np.median(array)
+std = np.std(array)
+
+print("Média:", mean)
+print("Mediana:", median)
+print("Desvio Padrão:", std)
