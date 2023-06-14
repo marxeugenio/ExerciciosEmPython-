@@ -1,0 +1,9 @@
+import numpy as np
+
+array = np.array([1, 5, 2, 4, 3])
+
+max_index = np.argmax(array)
+min_index = np.argmin(array)
+
+print("Índice do valor máximo:", max_index)
+print("Índice do valor mínimo:", min_index)
